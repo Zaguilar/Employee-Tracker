@@ -1,0 +1,23 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "This is a cms app that runs in the cli which allows a user to add and remove data from an employee tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaguilar/Employee-Tracker.git"
+  },
+  "author": "Zaguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zaguilar/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/Zaguilar/Employee-Tracker#readme",
+  "dependencies": {
+    "inquirer": "^7.3.1",
+    "mysql": "^2.18.1"
+  }
+}

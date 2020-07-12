@@ -1,5 +1,6 @@
 # Employee Tracker
 
+![](images\tracker.png)
 ## Description
 * Manage employee, department and role information through command line
 
@@ -16,10 +17,10 @@
 * ISC
 
 ## Contributing
-* 
+* none
 
 ## Tests
-* 
+* none
 
 ## Questions
 * If you have any additional questions you can email me at none

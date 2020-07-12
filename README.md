@@ -1,6 +1,6 @@
 # Employee Tracker
 
-![](images\tracker.png)
+![](images/tracker.png)
 ## Description
 * Manage employee, department and role information through command line
 

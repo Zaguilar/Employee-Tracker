@@ -1,3 +1,4 @@
+//many of the functions below are a bit redundant but I added them nonetheless"
 const mysql = require("mysql");
 const inquirer = require("inquirer");
 //mysql connection
@@ -98,6 +99,7 @@ async function microManage() {
         });
         microManage();
     }
+    //add role
     async function addRole() {
         await inquirer
           .prompt([
@@ -119,6 +121,7 @@ async function microManage() {
           })
         microManage();
       };
+      //view role
       function viewRole() {
         connection.query("SELECT * FROM role ", 
           function (err, answer) {
@@ -128,6 +131,7 @@ async function microManage() {
         });
         microManage();
     };
+    //add employee
     async function addEmp() {
         await inquirer
           .prompt([
@@ -185,6 +189,7 @@ async function microManage() {
                 });
             microManage();
         }
+        //view employee
         function viewEmp() {
             connection.query("SELECT first_name AS FirstName ,last_name as LastName , role.title as Role, department.name AS Department FROM employee INNER JOIN department ON department.id = employee.role_id left JOIN role ON role.id = employee.role_id",
               function (err, answer) {
@@ -194,7 +199,7 @@ async function microManage() {
               });
             microManage();
         }
-
+        //update role
         function updateRole() {
             inquirer.prompt([
               {

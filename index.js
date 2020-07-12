@@ -14,7 +14,7 @@ connection.connect(function (err) {
   console.log("connected as id " + connection.threadId);
 });
 
-
+//options screen
 async function microManage() {
     console.log("It's time to micro-manage!")
    await inquirer
@@ -33,7 +33,8 @@ async function microManage() {
              "Exit"
             ]
         })
-          .then(function (answer) {
+         //assigning functions to our options
+        .then(function (answer) {
             switch (answer.action){
                 case "Add department":
                     addDep();
@@ -71,6 +72,7 @@ async function microManage() {
             });
         
         }
+        //add department
         async function addDep() {
             await inquirer
                 .prompt([
@@ -88,7 +90,7 @@ async function microManage() {
              })
                 microManage();
               };
-    
+        // view departments
          function viewDep() {
             connection.query("SELECT * FROM department ", function (err, answer) {
                 console.table(answer);
